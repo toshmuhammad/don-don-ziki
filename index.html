@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="rosk">
+      <div class="logo">
+        <p>ROCK<br>PAPER<br>SCISSORS</p>
+      </div>
+      <div class="score-div">
+        <p class="score-label">SCORE</p>
+        <p class="score">0</p>
+      </div>
+    </header>
+
+    <main class="game">
+      <img class="triangle-bg" src="img/uchburchak.svg" alt="triangle" />
+
+      <button class="choice qogoz" data-choice="qogoz">
+        <img class="qo" src="img/qogoz.svg" alt="Qogoz">
+      </button>
+      <button class="choice qaychi" data-choice="qaychi">
+        <img class="qa" src="img/qaychi.svg" alt="Qaychi">
+      </button>
+      <button class="choice tosh" data-choice="tosh">
+        <img class="to" src="img/tosh.svg" alt="Tosh">
+      </button>
+    </main>
+
+    <section class="result hidden" id="result">
+      <div class="result-box">
+        <h3>Siz</h3>
+        <div id="player-pick" class="picked"></div>
+      </div>
+
+      <div class="result-message">
+        <h2 id="result-text">Win</h2>
+        <button id="play-again">Boshidan boshlash</button>
+      </div>
+
+      <div class="result-box">
+        <h3>User</h3>
+        <div id="user-pick" class="picked"></div>
+      </div>
+    </section>
+  </div>
+
+  <button class="rules-btn" id="openModal">RULES</button>
+
+  <div class="modal" id="modal">
+      <div class="modal-content">
+        <h2 class="rule">RULES</h2>
+      <button class="close-btn" id="closeModal">&times;</button>
+      <img src="img/qoida.svg" alt="Qoidalar">
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
